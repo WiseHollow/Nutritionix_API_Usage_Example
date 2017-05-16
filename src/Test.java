@@ -20,13 +20,7 @@ public class Test
                     .asJson();
 
             NutritionIxGetItemResponse getResponse = new NutritionIxGetItemResponse(response);
-//
-            //System.out.println("Reponse Code: " + response.getCode() + (response.getCode() == 200 ? "/okay" : "/error"));
-            //System.out.println("Reponse: " + response.getBody());
-//
-            //JSONObject jsonObject = response.getBody().getObject();
-            //String calories = jsonObject.get("nf_calories").toString();
-            //System.out.println("Calories in " + jsonObject.get("item_name").toString() + ": " + calories);
+            System.out.println("Name: " + getResponse.getBodyDetails().getItem().getName());
 
             //Search test and display value
 
@@ -35,7 +29,7 @@ public class Test
             //        .header("X-Mashape-Key", "1T5HvJ99YUmsh0xoWLFk0mbwftMvp1nvlRLjsnWXTSwRlg3oFl")
             //        .header("Accept", "application/json")
             //        .asJson();
-//
+
             //NutritionIXSearchResponse search = new NutritionIXSearchResponse(searchResponse);
             //for(NutritionIXItem item : search.getBodyDetails().getItems())
             //    System.out.println(item);
