@@ -39,9 +39,11 @@ public class NutritionIxGetItemResponse
                 String name = jsonItem.getString("item_name");
                 String brand = jsonItem.getString("brand_name");
 
+                String servingSize = jsonItem.getString("nf_serving_size_unit");
+
                 int calories = jsonItem.getInt("nf_calories");
 
-                item = new NutritionIXItem(id, name, brand, calories);
+                item = new NutritionIXItem(id, name, brand, calories, servingSize);
             } catch (JSONException e)
             {
                 e.printStackTrace();

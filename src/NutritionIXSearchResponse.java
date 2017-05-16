@@ -50,9 +50,11 @@ public class NutritionIXSearchResponse
                     String name = fields.getString("item_name");
                     String brand = fields.getString("brand_name");
 
+                    String servingSize = fields.getString("nf_serving_size_unit");
+
                     int calories = fields.getInt("nf_calories");
 
-                    items[i] = new NutritionIXItem(id, name, brand, calories);
+                    items[i] = new NutritionIXItem(id, name, brand, calories, servingSize);
                 }
             } catch (JSONException e)
             {
