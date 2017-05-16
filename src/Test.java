@@ -14,10 +14,12 @@ public class Test
         {
             // get info using id of food
 
-            //HttpResponse<JsonNode> response = Unirest.get("https://nutritionix-api.p.mashape.com/v1_1/item?upc=49000036756")
-            //        .header("X-Mashape-Key", "1T5HvJ99YUmsh0xoWLFk0mbwftMvp1nvlRLjsnWXTSwRlg3oFl")
-            //        .header("Accept", "application/json")
-            //        .asJson();
+            HttpResponse<JsonNode> response = Unirest.get("https://nutritionix-api.p.mashape.com/v1_1/item?upc=49000036756")
+                    .header("X-Mashape-Key", "1T5HvJ99YUmsh0xoWLFk0mbwftMvp1nvlRLjsnWXTSwRlg3oFl")
+                    .header("Accept", "application/json")
+                    .asJson();
+
+            NutritionIxGetItemResponse getResponse = new NutritionIxGetItemResponse(response);
 //
             //System.out.println("Reponse Code: " + response.getCode() + (response.getCode() == 200 ? "/okay" : "/error"));
             //System.out.println("Reponse: " + response.getBody());
@@ -28,13 +30,13 @@ public class Test
 
             //Search test and display value
 
-            String fields = "item_name%2Citem_id%2Cbrand_name%2Cnf_calories%2Cnf_total_fat"; // what info should we pull?
-            HttpResponse<JsonNode> searchResponse = Unirest.get("https://nutritionix-api.p.mashape.com/v1_1/search/cheddar%20cheese?fields=" + fields)
-                    .header("X-Mashape-Key", "1T5HvJ99YUmsh0xoWLFk0mbwftMvp1nvlRLjsnWXTSwRlg3oFl")
-                    .header("Accept", "application/json")
-                    .asJson();
-
-            NutritionIXSearchResponse search = new NutritionIXSearchResponse(searchResponse);
+            //String fields = "item_name%2Citem_id%2Cbrand_name%2Cnf_calories%2Cnf_total_fat"; // what info should we pull?
+            //HttpResponse<JsonNode> searchResponse = Unirest.get("https://nutritionix-api.p.mashape.com/v1_1/search/cheddar%20cheese?fields=" + fields)
+            //        .header("X-Mashape-Key", "1T5HvJ99YUmsh0xoWLFk0mbwftMvp1nvlRLjsnWXTSwRlg3oFl")
+            //        .header("Accept", "application/json")
+            //        .asJson();
+//
+            //NutritionIXSearchResponse search = new NutritionIXSearchResponse(searchResponse);
             //for(NutritionIXItem item : search.getBodyDetails().getItems())
             //    System.out.println(item);
         }

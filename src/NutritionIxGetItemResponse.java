@@ -34,13 +34,12 @@ public class NutritionIxGetItemResponse
                 JSONObject jsonItem = body.getObject();
                 if (jsonItem == null)
                     return;
-                JSONObject fields = jsonItem.getJSONObject("fields");
 
-                String id = fields.getString("item_id");
-                String name = fields.getString("item_name");
-                String brand = fields.getString("brand_name");
+                String id = jsonItem.getString("item_id");
+                String name = jsonItem.getString("item_name");
+                String brand = jsonItem.getString("brand_name");
 
-                int calories = fields.getInt("nf_calories");
+                int calories = jsonItem.getInt("nf_calories");
 
                 item = new NutritionIXItem(id, name, brand, calories);
             } catch (JSONException e)
