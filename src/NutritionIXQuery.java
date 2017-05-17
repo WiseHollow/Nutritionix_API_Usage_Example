@@ -18,7 +18,7 @@ public class NutritionIXQuery
         setType(type);
     }
 
-    public NutritionIXQuery addField(String field)
+    public NutritionIXQuery addField(NutritionIXField field)
     {
         if (fields == "?fields=")
             fields += field;
