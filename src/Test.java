@@ -11,7 +11,7 @@ public class Test
         NutritionIXQuery query = new NutritionIXQuery(NutritionIXQuery.NutritionIXQueryType.GET);
         query.addArgument("49000036756");
         HttpResponse<JsonNode> node = query.runQuery();
-        NutritionIxGetItemResponse response = new NutritionIxGetItemResponse(node);
+        NutritionIXGetItemResponse response = new NutritionIXGetItemResponse(node);
         System.out.println(response.getBodyDetails().getItem());
 
         //query = new NutritionIXQuery(NutritionIXQuery.NutritionIXQueryType.SEARCH);

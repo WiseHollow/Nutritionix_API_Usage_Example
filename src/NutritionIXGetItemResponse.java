@@ -6,12 +6,12 @@ import org.json.JSONObject;
 /**
  * Created by John on 5/16/2017.
  */
-public class NutritionIxGetItemResponse
+public class NutritionIXGetItemResponse
 {
     private ResponseHeaders headers;
     private ItemResponseBody body;
 
-    public NutritionIxGetItemResponse(HttpResponse<JsonNode> response)
+    public NutritionIXGetItemResponse(HttpResponse<JsonNode> response)
     {
         body = new ItemResponseBody(response.getBody());
         headers = new ResponseHeaders(response.getHeaders());
