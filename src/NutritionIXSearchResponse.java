@@ -44,15 +44,17 @@ public class NutritionIXSearchResponse
                     JSONObject jsonItem = hits.getJSONObject(i);
                     if (jsonItem == null)
                         continue;
-                    JSONObject fields = jsonItem.getJSONObject("fields");
+                    JSONObject fields = jsonItem.has("fields") ? jsonItem.getJSONObject("fields") : null;
+                    if (fields == null)
+                        continue;
 
-                    String id = fields.getString("item_id");
-                    String name = fields.getString("item_name");
-                    String brand = fields.getString("brand_name");
+                    String id = fields.has("item_id") ? fields.getString("item_id") : null;
+                    String name = fields.has("item_name") ? fields.getString("item_name") : null;
+                    String brand = fields.has("brand_name") ? fields.getString("brand_name") : null;
 
-                    String servingSize = fields.getString("nf_serving_size_unit");
+                    String servingSize = fields.has("nf_serving_size_unit") ? fields.getString("nf_serving_size_unit") : null;
 
-                    int calories = fields.getInt("nf_calories");
+                    int calories = fields.has("nf_calories") ? fields.getInt("nf_calories") : 0;
 
                     items[i] = new NutritionIXItem(id, name, brand, calories, servingSize);
                 }
