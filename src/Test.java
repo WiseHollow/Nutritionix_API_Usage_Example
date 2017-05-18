@@ -9,10 +9,10 @@ public class Test
     public static void main(String[] args)
     {
         NutritionIXQuery query = new NutritionIXQuery(NutritionIXQuery.NutritionIXQueryType.GET);
-        //query.addArgument("49000036756");
         query.addArgument("51c3d78797c3e6d8d3b546cf");
         HttpResponse<JsonNode> node = query.runQuery();
         NutritionIXGetItemResponse response = new NutritionIXGetItemResponse(node);
+
         System.out.println(response.getBodyDetails().getItem());
 
         query = new NutritionIXQuery(NutritionIXQuery.NutritionIXQueryType.SEARCH);
@@ -23,8 +23,8 @@ public class Test
                 .addField(NutritionIXField.SERVING_SIZE)
                 .addField(NutritionIXField.CALORIES)
                 .addField(NutritionIXField.TOTAL_FAT);
-                //.addField("item_name%2Citem_id%2Cbrand_name%2Cnf_calories%2Cnf_total_fat%2Cnf_serving_size_unit");
         node = query.runQuery();
+
         NutritionIXSearchResponse searchResponse = new NutritionIXSearchResponse(node);
         for (NutritionIXItem item : searchResponse.getBodyDetails().getItems())
             System.out.println(item);

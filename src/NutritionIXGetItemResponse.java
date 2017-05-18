@@ -35,13 +35,13 @@ public class NutritionIXGetItemResponse
                 if (jsonItem == null)
                     return;
 
-                String id = jsonItem.getString("item_id");
-                String name = jsonItem.getString("item_name");
-                String brand = jsonItem.getString("brand_name");
+                String id = jsonItem.has("item_id") ? jsonItem.getString("item_id") : null;
+                String name = jsonItem.has("item_name") ? jsonItem.getString("item_name") : null;
+                String brand = jsonItem.has("brand_name") ? jsonItem.getString("brand_name") : null;
 
-                String servingSize = jsonItem.getString("nf_serving_size_unit");
+                String servingSize = jsonItem.has("nf_serving_size_unit") ? jsonItem.getString("nf_serving_size_unit") : null;
 
-                int calories = jsonItem.getInt("nf_calories");
+                int calories = jsonItem.has("nf_calories") ? jsonItem.getInt("nf_calories") : 0;
 
                 item = new NutritionIXItem(id, name, brand, calories, servingSize);
             } catch (JSONException e)
