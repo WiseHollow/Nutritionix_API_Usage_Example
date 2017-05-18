@@ -1,3 +1,5 @@
+package net.johnbrooks.NW;
+
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.JsonNode;
 import com.mashape.unirest.http.Unirest;
@@ -36,7 +38,7 @@ public class NutritionIXQuery
     /**
      * Add a new param/argument to the query.
      * @param arg
-     * @return NutritionIXQuery
+     * @return net.johnbrooks.NW.NutritionIXQuery
      */
     public NutritionIXQuery addArgument(String arg)
     {
@@ -46,7 +48,7 @@ public class NutritionIXQuery
 
     /**
      * Reset all arguments to default.
-     * @return NutritionIXQuery
+     * @return net.johnbrooks.NW.NutritionIXQuery
      */
     public NutritionIXQuery clearArguments()
     {
@@ -58,7 +60,7 @@ public class NutritionIXQuery
     /**
      * Sets the type of query that will be run. Doing so resets the query to default initialization.
      * @param type
-     * @return NutritionIXQuery
+     * @return net.johnbrooks.NW.NutritionIXQuery
      */
     public NutritionIXQuery setType(NutritionIXQueryType type)
     {

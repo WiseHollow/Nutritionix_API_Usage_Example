@@ -1,3 +1,5 @@
+package net.johnbrooks.NW;
+
 import java.util.Map;
 
 /**
