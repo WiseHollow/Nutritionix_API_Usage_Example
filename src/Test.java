@@ -9,7 +9,8 @@ public class Test
     public static void main(String[] args)
     {
         NutritionIXQuery query = new NutritionIXQuery(NutritionIXQuery.NutritionIXQueryType.GET);
-        query.addArgument("49000036756");
+        //query.addArgument("49000036756");
+        query.addArgument("51c3d78797c3e6d8d3b546cf");
         HttpResponse<JsonNode> node = query.runQuery();
         NutritionIXGetItemResponse response = new NutritionIXGetItemResponse(node);
         System.out.println(response.getBodyDetails().getItem());

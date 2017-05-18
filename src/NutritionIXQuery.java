@@ -63,7 +63,7 @@ public class NutritionIXQuery
     public NutritionIXQuery setType(NutritionIXQueryType type)
     {
         this.type = type;
-        this.query = "https://nutritionix-api.p.mashape.com/v1_1/" + ((type == NutritionIXQueryType.GET) ? "item?upc=" : "search/");
+        this.query = "https://nutritionix-api.p.mashape.com/v1_1/" + ((type == NutritionIXQueryType.GET) ? "item?id=" : "search/");
         this.args = "";
         this.fields = "?fields=";
         return this;
