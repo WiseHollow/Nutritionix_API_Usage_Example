@@ -3,6 +3,10 @@ package net.johnbrooks.NW;
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.JsonNode;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 /**
  * Created by John on 5/16/2017.
  */
@@ -31,8 +35,22 @@ public class Main
         //for (net.johnbrooks.NW.NutritionIXItem item : searchResponse.getBodyDetails().getItems())
         //    System.out.println(item);
 
-        System.out.print("What food do you want to search for? ");
-        String searchFor = System.console().readLine();
-        System.out.println("Searching for " + searchFor + "...");
+        String searchFor;
+
+        try
+        {
+            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+            System.out.print("What food do you want to search for? ");
+            searchFor = br.readLine();
+            System.out.println("Searching for " + searchFor + "...");
+        } catch (IOException e)
+        {
+            e.printStackTrace();
+            return;
+        }
+
+        NutritionIXItem[] items = NutritionIXQuery.searchForItems(searchFor);
+        for (NutritionIXItem item : items)
+            System.out.println(item);
     }
 }

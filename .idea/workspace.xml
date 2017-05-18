@@ -2,39 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a55fe58-9802-4a7f-8167-bf399501433a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Nutritionix_Example/net/johnbrooks/NW/Main.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Nutritionix_Example/net/johnbrooks/NW/NutritionIXField.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Nutritionix_Example/net/johnbrooks/NW/NutritionIXGetItemResponse$ItemResponseBody.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Nutritionix_Example/net/johnbrooks/NW/NutritionIXGetItemResponse.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Nutritionix_Example/net/johnbrooks/NW/NutritionIXItem.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Nutritionix_Example/net/johnbrooks/NW/NutritionIXQuery$NutritionIXQueryType.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Nutritionix_Example/net/johnbrooks/NW/NutritionIXQuery.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Nutritionix_Example/net/johnbrooks/NW/NutritionIXSearchResponse$ItemsResponseBody.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Nutritionix_Example/net/johnbrooks/NW/NutritionIXSearchResponse.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Nutritionix_Example/net/johnbrooks/NW/ResponseHeaders.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/Nutritionix_Example_jar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/net/johnbrooks/NW/Main.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Nutritionix_Example/NutritionIXField.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Nutritionix_Example/NutritionIXItem.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Nutritionix_Example/NutritionIXQuery$NutritionIXQueryType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Nutritionix_Example/NutritionIXQuery.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Nutritionix_Example/NutritionIXSearchResponse$ItemsResponseBody.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Nutritionix_Example/NutritionIXSearchResponse.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Nutritionix_Example/NutritionIxGetItemResponse$ItemResponseBody.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Nutritionix_Example/NutritionIxGetItemResponse.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Nutritionix_Example/ResponseHeaders.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Nutritionix_Example/Test.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Test.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/NutritionIXField.java" afterPath="$PROJECT_DIR$/src/net/johnbrooks/NW/NutritionIXField.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/NutritionIXGetItemResponse.java" afterPath="$PROJECT_DIR$/src/net/johnbrooks/NW/NutritionIXGetItemResponse.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/NutritionIXItem.java" afterPath="$PROJECT_DIR$/src/net/johnbrooks/NW/NutritionIXItem.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/NutritionIXQuery.java" afterPath="$PROJECT_DIR$/src/net/johnbrooks/NW/NutritionIXQuery.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/NutritionIXSearchResponse.java" afterPath="$PROJECT_DIR$/src/net/johnbrooks/NW/NutritionIXSearchResponse.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ResponseHeaders.java" afterPath="$PROJECT_DIR$/src/net/johnbrooks/NW/ResponseHeaders.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Nutritionix_Example_jar/Nutritionix_Example.jar" afterPath="$PROJECT_DIR$/out/artifacts/Nutritionix_Example_jar/Nutritionix_Example.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Nutritionix_Example/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/out/production/Nutritionix_Example/META-INF/MANIFEST.MF" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net/johnbrooks/NW/Main.java" afterPath="$PROJECT_DIR$/src/net/johnbrooks/NW/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net/johnbrooks/NW/NutritionIXQuery.java" afterPath="$PROJECT_DIR$/src/net/johnbrooks/NW/NutritionIXQuery.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,9 +20,21 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/net/johnbrooks/NW/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="460">
+              <caret line="53" column="35" lean-forward="false" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NutritionIXQuery.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/net/johnbrooks/NW/NutritionIXQuery.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="18" column="51" lean-forward="false" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -90,6 +72,8 @@
         <option value="$PROJECT_DIR$/src/NutritionIXSearchResponse.java" />
         <option value="$PROJECT_DIR$/src/Test.java" />
         <option value="$PROJECT_DIR$/src/net/johnbrooks/NW/Test.java" />
+        <option value="$PROJECT_DIR$/src/net/johnbrooks/NW/NutritionIXField.java" />
+        <option value="$PROJECT_DIR$/src/net/johnbrooks/NW/NutritionIXQuery.java" />
         <option value="$PROJECT_DIR$/src/net/johnbrooks/NW/Main.java" />
       </list>
     </option>
@@ -464,7 +448,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -475,14 +458,13 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982087" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32876712" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982087" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -494,6 +476,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982087" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -508,6 +491,14 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/net/johnbrooks/NW/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/net/johnbrooks/NW/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -737,7 +728,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -745,15 +735,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/johnbrooks/NW/NutritionIXField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -773,16 +754,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/johnbrooks/NW/NutritionIXQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/net/johnbrooks/NW/NutritionIXSearchResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-8">
@@ -799,10 +770,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/johnbrooks/NW/NutritionIXField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/johnbrooks/NW/NutritionIXQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="18" column="51" lean-forward="false" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/net/johnbrooks/NW/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="460">
+          <caret line="53" column="35" lean-forward="false" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
           <folding />
         </state>
       </provider>

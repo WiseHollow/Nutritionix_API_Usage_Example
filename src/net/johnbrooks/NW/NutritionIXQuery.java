@@ -10,6 +10,26 @@ import com.mashape.unirest.http.exceptions.UnirestException;
  */
 public class NutritionIXQuery
 {
+    public static NutritionIXItem getItem(String id)
+    {
+        NutritionIXQuery query = new NutritionIXQuery(NutritionIXQueryType.GET);
+        query.addArgument(id);
+        HttpResponse<JsonNode> node = query.runQuery();
+        NutritionIXGetItemResponse response = new NutritionIXGetItemResponse(node);
+        return response.getBodyDetails().getItem();
+    }
+
+    public static NutritionIXItem[] searchForItems(String keywords)
+    {
+        NutritionIXQuery query = new NutritionIXQuery(NutritionIXQuery.NutritionIXQueryType.SEARCH);
+        query.addArgument(keywords);
+        for (NutritionIXField field : NutritionIXField.values())
+            query.addField(field);
+        HttpResponse<JsonNode> node = query.runQuery();
+        NutritionIXSearchResponse response = new NutritionIXSearchResponse(node);
+        return response.getBodyDetails().getItems();
+    }
+
     private NutritionIXQueryType type;
     private String query;
     private String args;
