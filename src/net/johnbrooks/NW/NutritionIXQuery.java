@@ -19,11 +19,11 @@ public class NutritionIXQuery
         return response.getBodyDetails().getItem();
     }
 
-    public static NutritionIXItem[] searchForItems(String keywords)
+    public static NutritionIXItem[] searchForItems(String keywords, NutritionIXField... fields)
     {
         NutritionIXQuery query = new NutritionIXQuery(NutritionIXQuery.NutritionIXQueryType.SEARCH);
         query.addArgument(keywords);
-        for (NutritionIXField field : NutritionIXField.values())
+        for (NutritionIXField field : fields.length == 0 ? NutritionIXField.values() : fields)
             query.addField(field);
         HttpResponse<JsonNode> node = query.runQuery();
         NutritionIXSearchResponse response = new NutritionIXSearchResponse(node);
